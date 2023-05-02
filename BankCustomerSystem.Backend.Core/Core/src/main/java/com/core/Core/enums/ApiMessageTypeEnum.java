@@ -1,5 +1,10 @@
 package com.core.Core.enums;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public enum ApiMessageTypeEnum {
     WARNING(0,"Warning"),
     INFORMATION(2,"Information"),
@@ -9,17 +14,4 @@ public enum ApiMessageTypeEnum {
 
     private final int code;
     private final String name;
-
-    ApiMessageTypeEnum(int code,String name){
-        this.code = code;
-        this.name = name;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public String getName() {
-        return name;
-    }
 }

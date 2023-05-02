@@ -1,4 +1,4 @@
-package com.core.Core.enums;
+package com.finance.Finance.enums;
 
 public enum ApiResponseEnum {
     SUCCESS(1,"Success"),

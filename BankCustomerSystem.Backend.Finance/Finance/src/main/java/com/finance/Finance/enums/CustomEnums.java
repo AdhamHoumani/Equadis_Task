@@ -16,7 +16,7 @@ public class CustomEnums {
     public enum AccountStatus {
         ACTIVE("Active"),
         BLOCKED("Blocked"),
-        UN_HOLD("Un Hold");
+        ON_HOLD("On Hold");
         private final String name;
     }
 
@@ -24,8 +24,24 @@ public class CustomEnums {
     @AllArgsConstructor
     public enum AccountType {
         EXTERNAL("External"),
-        PAYROLL("Payroll"),
-        SAVING("Saving");
+        INTERNAL("Internal");
+        private final String name;
+    }
+
+    @Getter
+    @AllArgsConstructor
+    public enum TransactionStatus{
+        FAILED("Failed"),
+        SUCCESS("Success"),
+        PENDING("Pending");
+        private final String name;
+    }
+
+    @Getter
+    @AllArgsConstructor
+    public enum TransactionType{
+        DEPOSIT("Deposit"),
+        WITHDRAW("Success");
         private final String name;
     }
 }

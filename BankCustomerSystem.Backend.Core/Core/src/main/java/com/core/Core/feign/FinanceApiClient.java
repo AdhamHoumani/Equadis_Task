@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.UUID;
 
 @FeignClient(value = "${app.feign.config.name.profile}", url = "${app.feign.config.url.profile}")
-public interface FinanceAppClient {
+public interface FinanceApiClient {
     @GetMapping("/account/checkCustomerActiveAccounts/{customerId}")
     ApiResponse checkCustomerActiveAccounts(@PathVariable UUID customerId);
 

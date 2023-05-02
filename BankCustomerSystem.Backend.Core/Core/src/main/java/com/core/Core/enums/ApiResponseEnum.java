@@ -1,5 +1,10 @@
 package com.core.Core.enums;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public enum ApiResponseEnum {
     SUCCESS(1,"Success"),
     FAILED(0,"Failed"),
@@ -7,17 +12,4 @@ public enum ApiResponseEnum {
 
     private final int code;
     private final String name;
-
-    ApiResponseEnum(int code,String name){
-        this.code = code;
-        this.name = name;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public String getName() {
-        return name;
-    }
 }

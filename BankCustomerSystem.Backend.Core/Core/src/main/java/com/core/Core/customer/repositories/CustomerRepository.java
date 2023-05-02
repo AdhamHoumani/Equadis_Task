@@ -9,4 +9,6 @@ import java.util.UUID;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customer, UUID>, JpaSpecificationExecutor<Customer> {
+    public Customer findByEmail(String email);
+    public Customer findByPhoneNumber(String phoneNumber);
 }

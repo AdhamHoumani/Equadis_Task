@@ -1,4 +1,4 @@
-package com.core.Core.common;
+package com.finance.Finance.common;
 
 public class ApiMessageDTO {
     private String Message;

@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import javax.validation.constraints.Null;
 import java.util.UUID;
 
 @Getter
@@ -33,7 +34,7 @@ public class Customer {
     private String email;
 
 
-    @NotNull(message = "{should.not.be.empty.key}")
+    @NotBlank(message = "{should.not.be.empty.key}")
     @Column(unique = true,name = "phone_number", nullable = false)
     private String phoneNumber;
 

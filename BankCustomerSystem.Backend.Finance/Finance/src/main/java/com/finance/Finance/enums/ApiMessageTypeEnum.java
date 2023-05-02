@@ -1,4 +1,4 @@
-package com.core.Core.enums;
+package com.finance.Finance.enums;
 
 public enum ApiMessageTypeEnum {
     WARNING(0,"Warning"),

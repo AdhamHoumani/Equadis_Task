@@ -1,7 +1,7 @@
-package com.core.Core.common;
+package com.finance.Finance.common;
 
-import com.core.Core.enums.ApiMessageTypeEnum;
-import com.core.Core.enums.ApiResponseEnum;
+import com.finance.Finance.enums.ApiMessageTypeEnum;
+import com.finance.Finance.enums.ApiResponseEnum;
 import lombok.Data;
 
 import java.util.ArrayList;

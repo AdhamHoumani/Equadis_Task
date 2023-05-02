@@ -1,21 +1,20 @@
-package com.core.Core.localHelpers;
+package com.finance.Finance.localehelpers;
 
-import com.core.Core.common.CommonUtils;
-import com.core.Core.common.DataValidationRes;
-import com.core.Core.customer.dtos.CustomerDTO;
+import com.finance.Finance.common.CommonUtils;
+import com.finance.Finance.common.DataValidationRes;
+import com.finance.Finance.account.dtos.AccountDTO;
+import com.finance.Finance.transaction.dtos.TransactionDTO;
+
 
 public final class DataValidationHelper {
 
-    public static DataValidationRes validateCustomerData(CustomerDTO customerDTO){
-        if (CommonUtils.isEmpty(customerDTO.getFirstName())) {
-            return new DataValidationRes(false,"First Name Required");
-        }else if (CommonUtils.isEmpty(customerDTO.getLastName())) {
-            return new DataValidationRes(false,"Last Name Required");
-        }else if (CommonUtils.isEmpty(customerDTO.getEmail())) {
-            return new DataValidationRes(false,"Email Required");
-        }else if (CommonUtils.isEmpty(customerDTO.getPhoneNumber())) {
-            return new DataValidationRes(false,"Phone Number");
+    public static DataValidationRes validateAccountStatusData(AccountDTO accountDTO){
+        if (CommonUtils.isEmpty(accountDTO.getCurrency())) {
+            return new DataValidationRes(false,"Currency Required");
         }
+        return new DataValidationRes(true);
+    }
+    public static DataValidationRes validateTransactionData(TransactionDTO transactionDTO){
         return new DataValidationRes(true);
     }
 }

@@ -11,7 +11,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
-public class Customer {
+public class CustomerDTO {
     @Id
     @GeneratedValue(generator = "uuid2")
     @Type(type = "pg-uuid")
